@@ -1,4 +1,4 @@
-// Problem 1
+
 
 const formatString = (input: string, toUpper?: boolean) : string =>{
     if(toUpper === false){
@@ -11,7 +11,7 @@ formatString("Hello");
 formatString("Hello", true);  
 formatString("Hello", false);
 
-// Problem 2
+
 
 // this array is used as a sample data for testing the function
 const books = [
@@ -29,7 +29,7 @@ const filterByRating = (items:{title:string, rating:number}[]) : {title:string, 
 filterByRating(books); 
 
 
-// Problem 3
+
 
 
 
@@ -41,7 +41,7 @@ concatenateArrays<string>(["hello", "world"], ["haw", "maw", "kaw"])
 concatenateArrays<number>([3,5,5], [4,4])
 
 
-// Problem 4
+
 
 
 class Vehicle {
@@ -73,11 +73,11 @@ class Car extends Vehicle {
     }
 }
 const myCar = new Car("Toyota", 2020, "Corolla");
-console.log(myCar.getInfo()); // Make: Toyota, Year: 2020
-console.log(myCar.getModel()); // Model: Corolla
+console.log(myCar.getInfo()); 
+console.log(myCar.getModel()); 
 
 
-// Problem 5
+
 
  const processValue = (value: string | number): number =>{
     if(typeof value === "number"){
@@ -91,7 +91,7 @@ processValue("hello")
 processValue(5) 
 
 
-// Problem 6
+
 
 interface Product{
   name: string;
@@ -115,7 +115,7 @@ getMostExpensiveProduct(products)
 
 
 
-// Problem 7
+
 
 enum Day {
     Monday,
@@ -134,11 +134,11 @@ const  getDayType = (day: Day): string =>{
     return "Weekday"
 
 }
-console.log(getDayType(Day.Monday));  // "Weekday"
-console.log(getDayType(Day.Sunday));  // "Weekend"
+console.log(getDayType(Day.Monday));  
+console.log(getDayType(Day.Sunday));  
 
 
-// Problem 8
+
 
 
 const squareAsync = async (n: number): Promise<number> => {
